@@ -29,7 +29,7 @@ Fits two-term fourier series to irradiance and temperature data for a specified 
 Main script -- solves the ODE and PDE for heat transfer through a multi-layered wall subject to two boundary conditions
 
 **Functionalities:**
-- Array LAYERS is for wall materials and properties, the first material in the list is the closest to the interior and the last material is closest to the exterior. The list runs from x = 0 to x = L
+- Array *LAYERS* is for wall materials and properties, the first material in the list is the closest to the interior and the last material is closest to the exterior. The list runs from x = 0 to x = L
 - String *INDOOR_BC_MODE* has two options: *fixed_Ts* and *comfort_band*. The *fixed_Ts* setting will run the model with a constant internal surface temperature set by *T_INDOOR_SURFACE_C*. The comfort_band setting will run the model with internal convection, and allow temperature to modulate until the room temperature reaches an upper or lower bound specified by *T_comfort_lo* and *T_comfort_hi*
 - Requires a .json file from **Heat_Transfer_Temp_Temp_Irr.ipynb** for irradiance and temperature functions, this has to be in the same folder as the **Heat_Transfer_Project.ipynb** script
 - *OUT_DIR* is the directory that output figures will be saved to, this is a pathname
