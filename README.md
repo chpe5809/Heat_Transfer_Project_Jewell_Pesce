@@ -3,7 +3,8 @@
 Bridget Jewell, Chiara Pesce
 
 ## Python Files: 
-### **Heat_Transfer_Temp_Temp_Irr.ipynb**: Fits two-term fourier series to irradiance and temperature data for a specified month
+### **Heat_Transfer_Temp_Temp_Irr.ipynb**
+Fits two-term fourier series to irradiance and temperature data for a specified month
 
 **Functionalities:**
 - Requires CSV file with temperature and GHI data from https://nsrdb.nlr.gov/data-viewer averaged over 60 minutes with at least a months worth of data in the same folder as **Heat_Transfer_Temp_Temp_Irr.ipynb** script
@@ -24,7 +25,8 @@ Bridget Jewell, Chiara Pesce
 |--------------------|--------------------------------------------------------------------------|
 |july_params.json    |Coefficients for fourier series, needed in **Heat_Transfer_Project.ipynb**|
 
-### **Heat_Transfer_Project.ipynb**: Main script -- solves the ODE and PDE for heat transfer through a multi-layered wall subject to two boundary conditions
+### **Heat_Transfer_Project.ipynb**
+Main script -- solves the ODE and PDE for heat transfer through a multi-layered wall subject to two boundary conditions
 
 **Functionalities:**
 - Array LAYERS is for wall materials and properties, the first material in the list is the closest to the interior and the last material is closest to the exterior. The list runs from x = 0 to x = L
