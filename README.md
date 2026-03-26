@@ -11,13 +11,13 @@
 - *T_PER* is the length of a period in seconds, the default is 1 day (86400s)
 - *MONTH* is the month the code will fit GHI and temperature functionsto
 **Figure Outputs:**
-|Filename|Description|
-|--------|-----------|
+|Filename|Description    |                                                |
+|--------|---------------|------------------------------------------------|
 |01_forcing_functions.png|Irradiance and temperature vs time in the period|
 **File Outputs:**
-|Filename|Description|
-|--------|-----------|
-|july_params.json|Coefficients for fourier series, needed in **Heat_Transfer_Project.ipynb**|
+|Filename|Description|                                                                          |
+|--------|-----------|--------------------------------------------------------------------------|
+|july_params.json    |Coefficients for fourier series, needed in **Heat_Transfer_Project.ipynb**|
 
 ### **Heat_Transfer_Project.ipynb**: Main script -- solves the ODE and PDE for heat transfer through a multi-layered wall subject to two boundary conditions
 **Functionalities:**
@@ -30,14 +30,14 @@
 - *H_room* is the length of air in the room perpendicular to the wall (used for *comfort_band*)
 - *t_end* is the amount of time the simpulation runs in seconds, so *t_end* = 24 * 3600 would be 24hr, *dt* is the resolution of the simulation in seconds, so *dt* = 60 will evaluate every minute
 **Figure Outputs**
-|Filename|Description|
-|--------|-----------|
-|01_forcing_functions.png|Irradiance and temperature fourier functions from **Heat_Transfer_Temp_Temp_Irr.ipynb**|
-|02_temperature_profiles.png|Temperature profiles for *n_prof* points in time|
-|03_surface_temperatures.png|Interior surface, midpoint and exterior surface temperatures vs time|
-|03b_room_hvac_h.png|Used in *comfort_band*, displays room temperature, q_hvac and the indoor natural convection coefficient|
-|03b_wall_flux_fixedTs.png|Used in *comfort_band*, displays indoor natural convection coefficient, nu, and rho for the air|
-|04_temperature_field.png|Heatmap of temperature vs time and location in wall (x)
-|05_heat_flux.png|Interior and exterior surface flux from conduction vs time
-|06_thermal_load.png|Thermal load and cumulative energy demand vs time
-|07_summary_figure.png|Displays four summary graphs from above
+|Filename                   |Description                                                                                            |
+|---------------------------|-------------------------------------------------------------------------------------------------------|
+|01_forcing_functions.png   |Irradiance and temperature fourier functions from **Heat_Transfer_Temp_Temp_Irr.ipynb**                |
+|02_temperature_profiles.png|Temperature profiles for *n_prof* points in time                                                       |
+|03_surface_temperatures.png|Interior surface, midpoint and exterior surface temperatures vs time                                   |
+|03b_room_hvac_h.png        |Used in *comfort_band*, displays room temperature, q_hvac and the indoor natural convection coefficient|
+|03b_wall_flux_fixedTs.png  |Used in *comfort_band*, displays indoor natural convection coefficient, nu, and rho for the air        |
+|04_temperature_field.png   |Heatmap of temperature vs time and location in wall (x)                                                |
+|05_heat_flux.png           |Interior and exterior surface flux from conduction vs time                                             |
+|06_thermal_load.png        |Thermal load and cumulative energy demand vs time                                                      |
+|07_summary_figure.png      |Displays four summary graphs from above                                                                |
