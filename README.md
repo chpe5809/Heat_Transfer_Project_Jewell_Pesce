@@ -11,12 +11,12 @@
 - *T_PER* is the length of a period in seconds, the default is 1 day (86400s)
 - *MONTH* is the month the code will fit GHI and temperature functionsto
 **Figure Outputs:**
-|Filename|Description    |                                                |
-|--------|---------------|------------------------------------------------|
+|Filename                |Description                                     |
+|------------------------|------------------------------------------------|
 |01_forcing_functions.png|Irradiance and temperature vs time in the period|
 **File Outputs:**
-|Filename|Description|                                                                          |
-|--------|-----------|--------------------------------------------------------------------------|
+|Filename            |Description                                                               |
+|--------------------|--------------------------------------------------------------------------|
 |july_params.json    |Coefficients for fourier series, needed in **Heat_Transfer_Project.ipynb**|
 
 ### **Heat_Transfer_Project.ipynb**: Main script -- solves the ODE and PDE for heat transfer through a multi-layered wall subject to two boundary conditions
